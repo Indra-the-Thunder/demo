@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main_Cont" id="main_cont">
+        <h1>Bajaj Pulsar N160</h1>
+        <h4 id="name">Brooklyn Black</h4>
+        <div class="img_Cont">
+            <div class="img" id="img1" style=" display: block;">
+
+                <input type="range" name="" id="range" value="0" min="0" max="15">
+                <div class="main" id="main">
+                    <img src="pow_img/dual_black/0.png" alt="">
+                </div>
+
+            </div>
+            <div class="img" id="img2">
+
+                <input type="range" name="" id="range1" value="0" min="0" max="15">
+                <div class="main" id="main1">
+                    <img src="pow_img/dual_blue/0.png" alt="">
+                </div>
+
+            </div>
+            <div class="img" id="img3">
+
+                <input type="range" name="" id="range2" value="0" min="0" max="15">
+                <div class="main" id="main2">
+                    <img src="pow_img/dual_red/0.png" alt="">
+                </div>
+
+            </div>
+            <div class="img" id="img4">
+
+                <input type="range" name="" id="range3" value="0" min="0" max="15">
+                <div class="main" id="main3">
+                    <img src="pow_img/single_blue/0.png" alt="">
+                </div>
+
+            </div>
+            <div class="img" id="img5">
+
+                <input type="range" name="" id="range4" value="0" min="0" max="15">
+                <div class="main" id="main4">
+                    <img src="pow_img/single_red/0.png" alt="">
+                </div>
+
+            </div>
+            <div class="img" id="img6">
+
+                <input type="range" name="" id="range5" value="0" min="0" max="15">
+                <div class="main" id="main5">
+                    <img src="pow_img/single_grey/0.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="color_Changer">
+            <div class="chanel_Dual">
+                <h3 class="h3">Dual Channel</h3>
+                <div class="d_C">
+                    <div class="Dual_c" style="background:#000000;" onclick="dualBlack()"></div>
+                    <div class="Dual_c" style="background:#007bff" onclick="dualBlue()"></div>
+                    <div class="Dual_c" style="background:#e2302a;" onclick="dualRed()"></div>
+                </div>
+            </div>
+            <div class="chanel_Single">
+                <h3 class="h3">Single Channel</h3>
+                <div class="s_C">
+                    <div class="Single_c" style="background:#007bff;" onclick="singleBlue()"></div>
+                    <div class="Single_c" style="background:#e2302a;" onclick="singleRed()"></div>
+                    <div class="Single_c" style="background:#79797c;" onclick="singleGrey()"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="demo.js">
+</script>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="experiment.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="img_sld">
+        <div class="upper_Img_Div">
+            <div class="arrow _Left">
+
+            </div>
+            <div class="img_Slide">
+                <img src="pow_img/dual_black/0.png" alt="" id="image">
+            </div>
+            <div class="arrow _Right">
+
+            </div>
+        </div>
+        <div class="lower_Div_Control">
+            <div class="main_Back">
+                <div class="single_Dual_selector">
+                    <div class="select_Dual" onclick="go_Dual()" id="select_Dual" onmouseenter="hover_Dual_Enter()" onmouseleave="hover_Dual_Exit()">
+                        <h2 class="dual_Head" id="dual_h2">
+                            Dual Channel ABS
+                        </h2>
+                    </div>
+                    <div class="select_Single" onclick="go_Single()" id="select_Single" onmouseenter="hover_Single()" onmouseleave="hover_Single_Exit()">
+                        <h2 class="single_Head" id="single_h2">
+                            Single Channel ABS
+                        </h2>
+                    </div>
+                </div>
+                <div class="color_Pick">
+                    <div class="col_para">
+                        <p>Pick a shade that fits your persona</p>
+                    </div>
+                    <div class="color_Shade active">
+                        <h2 class="color_Head">
+                            Exciting colour options
+                        </h2>
+
+                        <div class="dual" id="dual">
+                            <div class="cols">
+                                <div class="col" id="col 1" style="background:#000000 ; outline: 2px solid #006ad0;" onclick="dualBlack()"></div>
+                                <div class="col" id="col " style="background:#e2302a;" onclick="singleRed()"></div>
+                                <div class="col" id="col 2" style="background:#007bff" onclick="dualBlue()"></div>
+                            </div>
+                            <p class="col_Name" id="col_name" style="display: block;">Brooklyn Black
+                            </p>
+
+                        </div>
+                        <div class="single" id="single" style="display: none;">
+                            <div class="cols" style="gap: 17px;">
+                                <div class="col" id="col 3" style="background:#006bbd ; outline: 2px solid #006ad0;" onclick="singleBlue()"></div>
+                                <div class="col" id="col 4" style="background:#e2302a;" onclick="singleRed()"></div>
+                                <div class="col" id="col 5" style="background:#79797c ;" onclick="singleGrey()">
+                                </div>
+                            </div>
+                            <p class="col_Name" id="col_name 1" style="display: block;">
+                                Caribbean Blue</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function dualBlack() {
+        document.getElementById('image').src = 'pow_img/dual_black/0.png';
+        document.getElementById('col 1').style.outline = '2px solid #006ad0';
+        document.getElementById('col 2').style.outline = '2px solid #c4c4c4';
+        document.getElementById('col_name').innerText = "Brooklyn Black";
+    }
+
+    function dualBlue() {
+        document.getElementById('image').src = 'pow_img/dual_blue/0.png';
+        document.getElementById('col 2').style.outline = '2px solid #006ad0';
+        document.getElementById('col 1').style.outline = '2px solid #c4c4c4';
+        document.getElementById('col_name').innerText = "Caribbean Blue";
+    }
+
+    function go_Dual() {
+        document.getElementById('dual').style.display = 'block';
+        document.getElementById('single').style.display = 'none';
+        document.getElementById('select_Dual').style.background = '#007bff';
+        document.getElementById('select_Single').style.background = '#b0cde9';
+        document.getElementById('single_h2').style.color = '#007bff';
+        document.getElementById('dual_h2').style.color = '#fff';
+
+        dualBlack();
+    }
+
+    function go_Single() {
+        document.getElementById('dual').style.display = 'none';
+        document.getElementById('single').style.display = 'block';
+        document.getElementById('select_Single').style.background = '#007bff';
+        document.getElementById('select_Dual').style.background = '#b0cde9';
+        document.getElementById('single_h2').style.color = '#fff';
+        document.getElementById('dual_h2').style.color = '#007bff';
+
+        singleBlue();
+
+    }
+
+    function singleBlue() {
+        document.getElementById('image').src = 'pow_img/single_blue/0.png';
+        document.getElementById('col 3').style.outline = '2px solid #006ad0';
+        document.getElementById('col 4').style.outline = '2px solid #c4c4c4';
+        document.getElementById('col 5').style.outline = '2px solid #c4c4c4';
+        document.getElementById('col_name 1').innerText = "Caribbean Blue";
+    }
+
+    function singleRed() {
+        document.getElementById('image').src = 'pow_img/single_red/0.png';
+        document.getElementById('col 3').style.outline = '2px solid #c4c4c4';
+        document.getElementById('col 4').style.outline = '2px solid #006ad0';
+        document.getElementById('col 5').style.outline = '2px solid #c4c4c4';
+        document.getElementById('col_name 1').innerText = "Racing Red";
+    }
+
+    function singleGrey() {
+        document.getElementById('image').src = 'pow_img/single_grey/0.png';
+        document.getElementById('col 3').style.outline = '2px solid #c4c4c4';
+        document.getElementById('col 4').style.outline = '2px solid #c4c4c4';
+        document.getElementById('col 5').style.outline = '2px solid #006ad0';
+        document.getElementById('col_name 1').innerText = "Techno Grey";
+    }
+</script>
+
+</html>

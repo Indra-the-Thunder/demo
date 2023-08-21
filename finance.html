@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>avail-finance</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="finance.css">
+</head>
+
+<body>
+
+    <div class="head_eq" id="myHeader">
+        <div class="logo_cont">
+            <a href="#">
+                <div class="logo"></div>
+            </a>
+        </div>
+        <div class="menu_section">
+            <div class="enq_btn">
+                <button class="active">Enquree Now</button>
+                <button>Visit E- Showroom</button>
+            </div>
+            <div class="ser_menu">
+                <div class="search">
+                    <a href="#" title="Search for Bikes" id="search" onclick="searchShow()">
+                        <img class="icon" src="arrpng/search_FILL0_wght400_GRAD0_opsz48.png" width="28" style="margin-top: 4px;" alt="search, icon transparent images vector" />
+                    </a>
+                </div>
+                <div class="main_menu">
+                    <a href="#" title="Menu" onclick="menuShow()">
+
+                        <img class="icon" src="arrpng/menu_FILL0_wght400_GRAD0_opsz48.png" width="24" height="28" alt="Hd Menu Icon" />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="search_bar" id="search_bar">
+            <div class="cancle">
+
+                <a href="#" title="Close Search-bar" class="cancle_icon" id="cancle" onclick="cancle()">
+
+                    <img class="icon" src="arrpng/arrow_upward_FILL0_wght400_GRAD0_opsz48 (1).png" width="32" alt="Hd Menu Icon" />
+                </a>
+            </div>
+            <div class="ser">
+                <input type="text" name="" id="" placeholder="Search for bikes, events or rides">
+                <div class="inp_icn">
+                    <a href="#" title="Search">
+                        <img class="icon" src="arrpng/search_FILL0_wght400_GRAD0_opsz48.png" width="35" alt="Hd Menu Icon" />
+                    </a>
+                    <div class="border"></div>
+                    <a href="#" title="Search by Voice" onclick="alert('Microphone has been stopped. Please click on the left side button to restart the microphone')">
+                        <img class="icon" src="arrpng/mic_FILL0_wght400_GRAD0_opsz48.png" width="35" alt="Hd Menu Icon" />
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="side_menu" id="side_menu">
+            <div class="menu_cancle">
+                <a href="#" title="Close Menu" class="cancle_icon" id="cancle" onclick="cancle2()">
+                    <img class="icon" src="arrpng/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.png" width="20" alt="Hd Menu Icon" />
+                </a>
+            </div>
+            <div class="menu_cont">
+                <ul>
+                    <a href="#">
+                        <li>
+                            Motorcycle
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            3 Wheelers & Qute
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Coustomer Service
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            About Bajaj
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Investors
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            International Business
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Careers
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Avail Finance
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="menu_contact">
+                <p>Call Us</p>
+                <a href="#" class="hov">+91 7219821111</a>
+                <p style="margin-top: 10px;">Email</p>
+                <a href="#"> Coustomerservices@bajajauto.co.in</a>
+
+            </div>
+            <div class="menu_soc_icon">
+                <div class="soc_icn"></div>
+                <div class="soc_icn"></div>
+                <div class="soc_icn"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main_cont">
+        <div class="main_body_cont">
+            <div class="image_div">
+
+            </div>
+            <div class="finance_div">
+                <div class="finance_head">
+                    <h3>Check your eligiblity for finance</h3>
+                    <p>Please give us your details to know your best offer</p>
+                </div>
+                <div class="finance_inp">
+                    <div class="finance_inp_nm">
+                        <div class="fin_logo"></div>
+                        <label for="">Full Name</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="finance_inp_num">
+                        <div class="fin_logo"></div>
+                        <label for="">Mobile Number</label>
+                        <input type="number" name="" id="" maxlength="10">
+                    </div>
+                    <div class="finance_inp_nm">
+                        <div class="fin_logo"></div>
+                        <label for="">Pin Code</label>
+                        <input type="number" name="" id="" maxlength="6">
+                    </div>
+                </div>
+                <div class="finance_check">
+                    <div class="fin_updt">
+                        <input type="checkbox" name="" id="">
+                        <p>Yes, I would like to receive importamt updates and notification on Whatsapp.</p>
+                    </div>
+                    <div class="fin_updt">
+                        <input type="checkbox" name="" id="">
+                        <p>I have read and agree to the <a href="#">Tearms and Conditions.</a> And I agree to consent to Bajaj Auto collecting my details.</p>
+                    </div>
+                    <button>Proceed</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer_Sec">
+
+            <div class="reach_Us">
+                <div class="rec_lt">
+                    <h3> Reach Us</h3>
+                    <div class="lt_flex">
+                        <div class="re_U">
+                            <img src="icons/Icon-phone.png" alt="">
+                            <span>Call: </span>
+                            <a href="#"> +91 7222255555</a>
+                        </div>
+                        <div class="re_U">
+                            <img src="icons/Icon-envelope.png" alt="">
+                            <span>Write: </span>
+                            <a href="#"> customerservice@bajajauto.co.in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rec_rt">
+                    <h3 style="font-size: 25px; font-weight: 400; margin-top: 3vh;">Follow Us</h3>
+                    <div class="soc_icn">
+                        <a href="#"><img src="icons/Facebook.png" alt="" title="Facebook"></a>
+                        <a href="#"><img src="icons/Instagram.png" alt="" title="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer_List">
+                <div class="upper List">
+                    <div class="sub_List">
+                        <h3>Motorcycle</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Pulsar</a>
+                            </li>
+                            <li>
+                                <a href="#">Dominar</a>
+                            </li>
+                            <li>
+                                <a href="#">Avanger</a>
+                            </li>
+                            <li>
+                                <a href="#">Platina</a>
+                            </li>
+                            <li>
+                                <a href="#">CT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>3 Wheelers & Qute</h3>
+                        <ul>
+                            <li><a href="#">RE</a></li>
+
+
+                            <li><a href="#">Maxima Z</a></li>
+
+
+                            <li><a href="#">Maxima X Wide</a></li>
+
+
+                            <li><a href="#">Maxima C</a></li>
+
+
+                            <li><a href="#">Qute</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Coustomer Service</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Contact Us </a>
+                            </li>
+
+                            <li>
+                                <a href="#">Spares</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Owner's Manual</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Locate a Dealer</a>
+                            </li>
+
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>About Bajaj</h3>
+                        <ul>
+                            <li>
+                                <a href="#">the world's favourite indian</a>
+                            </li>
+                            <li>
+                                <a href="#">75 years od bajaj auto</a>
+                            </li>
+                            <li>
+                                <a href="#">bajaj team</a>
+                            </li>
+                            <li>
+                                <a href="#">chairman emeritus speeches</a>
+                            </li>
+                            <li>
+                                <a href="#">bajaj auto & ktm</a>
+                            </li>
+                            <li>
+                                <a href="#">about bajaj group</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Investors</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Investors relations</a>
+                            </li>
+                            <li>
+                                <a href="#">financial performance</a>
+                            </li>
+                            <li>
+                                <a href="#">stock exchange intimations</a>
+                            </li>
+                            <li>
+                                <a href="#">divident</a>
+                            </li>
+                            <li>
+                                <a href="#">policies/codes</a>
+                            </li>
+                            <li>
+                                <a href="#">miscellaneous</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Corporate</h3>
+                        <ul>
+                            <li>
+                                <a href="#">media center</a>
+                            </li>
+                            <li>
+                                <a href="#">corporate social respondilibity</a>
+                            </li>
+                            <li>
+                                <a href="#">key policies</a>
+                            </li>
+                            <li>
+                                <a href="#">code of conduct</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="lower List">
+
+                    <div class="sub_List">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li>
+                                <a href="#">why us</a>
+                            </li>
+                            <li>
+                                <a href="#">who we are </a>
+                            </li>
+                            <li>
+                                <a href="#">life within</a>
+                            </li>
+                            <li>
+                                <a href="#">join us </a>
+                            </li>
+                            <li>
+                                <a href="#">offroad </a>
+                            </li>
+                            <li>
+                                <a href="#">torq</a>
+                            </li>
+                            <li>
+                                <a href="#">ohm </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li>
+                                <a href="#">terms & conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="#">privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Sitemap</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3 style="border: none;"></h3>
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3 style="border: none;"></h3>
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3 style="border: none;"></h3>
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ft_Link">
+                <div class="sub_ft_link">
+                    <h4>Sports Bikes</h4>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>Naked Bikes</h4>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>Latest Bikes / New Bikes</h4>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>Bikes by Price <span onclick="showMenu1()"><img src="icons/chevron-down.png" id="rot1" alt="up"></span></h4>
+                    <ul id="ul_1" style="height: 220px; width: 200px; margin: -240px 0 0 -20px;">
+                        <li>
+                            <a href="#">Bikes Under 70000</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 80000</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 1 Lakh</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 2 Lakh</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 5 Lakh</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 10 Lakh</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>Bikes by Engine Capacity <span onclick="showMenu2()"><img src="icons/chevron-down.png" id="rot2" alt="up"></span></h4>
+                    <ul id="ul_2">
+                        <li>
+                            <a href="#">100 CC</a>
+                        </li>
+                        <li>
+                            <a href="#">125 CC</a>
+                        </li>
+                        <li>
+                            <a href="#">150 CC</a>
+                        </li>
+                        <li>
+                            <a href="#">200 CC</a>
+                        </li>
+                        <li>
+                            <a href="#">250 CC</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>All Bikes</h4>
+                </div>
+            </div>
+            <div class="copy_Right">
+                <p>Copyright © 2022 Indrajit Santra. All rights reserved</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

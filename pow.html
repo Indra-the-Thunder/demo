@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .bdy {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(https://images.unsplash.com/flagged/photo-1556669546-b1f29875df1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(86, 2, 196);
+        }
+        
+        .bdy .main_div {
+            height: 500px;
+            width: 500px;
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            font-size: 40px;
+            font-weight: 600;
+            color: rgb(0, 247, 255);
+            text-align: center;
+        }
+        
+        input[type="number"] {
+            height: 50px;
+            font-size: 35px;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        button {
+            height: 50px;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body class="bdy">
+    <div class="main_div">
+        <label for="">Number :- </label>
+        <input type="number" name="" id="num">
+        <br><br>
+        <label for="">Power :- </label>
+        <input type="number" name="" id="pow">
+        <br><br>
+        <button onclick="calc()">Calculate</button>
+        <br><br>
+        <h2 id="ans"></h2>
+    </div>
+</body>
+<script>
+    function calc() {
+        let num = parseInt(document.getElementById('num').value);
+
+        let pow = parseInt(document.getElementById('pow').value);
+
+
+        let ans = Math.pow(num, pow);
+
+        document.getElementById('ans').innerHTML = ans;
+    }
+</script>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .main {
+            position: absolute;
+            height: 70vh;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10% auto;
+        }
+        
+        .main img {
+            width: 80%;
+        }
+        
+        input[type="range"] {
+            position: absolute;
+            height: 100%;
+            width: 60%;
+            cursor: grabbing;
+            z-index: 1;
+            opacity: 0;
+        }
+        
+        h3 {
+            position: absolute;
+            top: 80px;
+        }
+    </style>
+    <title>360 Image viwer</title>
+</head>
+<script>
+    setInterval(spinn, 100);
+
+    function spinn() {
+        let range = document.getElementById('range').value;
+        let main = document.getElementById('main');
+
+        main.innerHTML = '<img src="pow_img/dual_red/' + range + '.png">';
+        console.log(range);
+    }
+</script>
+
+<body>
+    <div class="container">
+        <h3>Drag on the Image</h3>
+        <input type="range" name="" id="range" value="0" min="0" max="15">
+        <div class="main" id="main">
+            <img src="pow_img/dual_red/0.png" alt="">
+        </div>
+    </div>
+</body>
+
+
+</html>

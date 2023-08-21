@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="index.css">
+    <title>Bajaj Pulsar N160</title>
+</head>
+<div class="head_eq" id="myHeader">
+    <div class="logo_cont">
+        <a href="#">
+            <div class="logo"></div>
+        </a>
+    </div>
+    <div class="menu_section">
+        <div class="enq_btn">
+            <button class="active">Enquree Now</button>
+            <button>Visit E- Showroom</button>
+        </div>
+        <div class="ser_menu">
+            <div class="search">
+                <a href="#" title="Search for Bikes" id="search" onclick="searchShow()">
+                    <img class="icon" src="arrpng/search_FILL0_wght400_GRAD0_opsz48.png" width="28" style="margin-top: 4px;" alt="search, icon transparent images vector" />
+                </a>
+            </div>
+            <div class="main_menu">
+                <a href="#" title="Menu" onclick="menuShow()">
+
+                    <img class="icon" src="arrpng/menu_FILL0_wght400_GRAD0_opsz48.png" width="24" height="28" alt="Hd Menu Icon" />
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="search_bar" id="search_bar">
+        <div class="cancle">
+
+            <a href="#" title="Close Search-bar" class="cancle_icon" id="cancle" onclick="cancle()">
+
+                <img class="icon" src="arrpng/arrow_upward_FILL0_wght400_GRAD0_opsz48 (1).png" width="32" alt="Hd Menu Icon" />
+            </a>
+        </div>
+        <div class="ser">
+            <input type="text" name="" id="" placeholder="Search for bikes, events or rides">
+            <div class="inp_icn">
+                <a href="#" title="Search">
+                    <img class="icon" src="arrpng/search_FILL0_wght400_GRAD0_opsz48.png" width="35" alt="Hd Menu Icon" />
+                </a>
+                <div class="border"></div>
+                <a href="#" title="Search by Voice" onclick="alert('Microphone has been stopped. Please click on the left side button to restart the microphone')">
+                    <img class="icon" src="arrpng/mic_FILL0_wght400_GRAD0_opsz48.png" width="35" alt="Hd Menu Icon" />
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="side_menu" id="side_menu">
+        <div class="menu_cancle">
+            <a href="#" title="Close Menu" class="cancle_icon" id="cancle" onclick="cancle2()">
+                <img class="icon" src="arrpng/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.png" width="20" alt="Hd Menu Icon" />
+            </a>
+        </div>
+        <div class="menu_cont">
+            <ul>
+                <a href="#">
+                    <li>
+                        Motorcycle
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        3 Wheelers & Qute
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        Coustomer Service
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        About Bajaj
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        Investors
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        International Business
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        Careers
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        Avail Finance
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="menu_contact">
+            <p>Call Us</p>
+            <a href="#" class="hov">+91 7219821111</a>
+            <p style="margin-top: 10px;">Email</p>
+            <a href="#"> Coustomerservices@bajajauto.co.in</a>
+
+        </div>
+        <div class="menu_soc_icon">
+            <div class="soc_icn"></div>
+            <div class="soc_icn"></div>
+            <div class="soc_icn"></div>
+        </div>
+    </div>
+</div>
+
+<body class="main_bdy">
+
+    <div class="main_cont">
+        <div class="vid_dis">
+            <div class="vid">
+                <iframe width="1590" height="660" src="https://www.youtube.com/embed/ARJkO-i33nA" title="Bajaj Pulsar N160 | Who needs navigation when you can simply reroute?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="price">
+            <div class="heading_name">
+                <h4>Pulsar</h4>
+                <h2>N160</h2>
+            </div>
+            <div class="price_heading">
+                <p class="p">Price starting from</p>
+                <h3>₹ 129 645/-*</h3>
+                <p id="price">Ex-showroom Price
+                    <span id="state">New Delhi</span> <span id="city">Change City</span>
+                </p>
+                <button class="price_btn" onclick="finance_page()">Explore Finance</button>
+
+            </div>
+        </div>
+        <div class="img_sld">
+            <div class="upper_Img_Div">
+                <div class="arrow _Left">
+                    5</div>
+                <div class="img_Slide">
+                    <img src="n160_images/black_00.png" alt="" id="image">
+                </div>
+                <div class="arrow _Right">></div>
+            </div>
+            <div class="lower_Div_Control">
+                <div class="main_Back">
+                    <div class="single_Dual_selector">
+                        <div class="select_Dual" onclick="go_Dual()" id="select_Dual" onmouseenter="hover_Dual_Enter()" onmouseleave="hover_Dual_Exit()">
+                            <h2 class="dual_Head" id="dual_h2">
+                                Dual Channel ABS
+                            </h2>
+                        </div>
+                        <div class="select_Single" onclick="go_Single()" id="select_Single" onmouseenter="hover_Single()" onmouseleave="hover_Single_Exit()">
+                            <h2 class="single_Head" id="single_h2">
+                                Single Channel ABS
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="color_Pick">
+                        <div class="col_para">
+                            <p>Pick a shade that fits your persona</p>
+                        </div>
+                        <div class="color_Shade active">
+                            <h2 class="color_Head">
+                                Exciting colour options
+                            </h2>
+
+                            <div class="dual" id="dual">
+                                <div class="cols">
+                                    <div class="col" id="col 1" style="background:#000000 ; outline: 2px solid #006ad0;" onclick="dualBlack()"></div>
+                                    <div class="col" id="col 2" style="background:#007bff" onclick="dualBlue()"></div>
+                                </div>
+                                <p class="col_Name" id="col_name" style="display: block;">Brooklyn Black
+                                </p>
+
+                            </div>
+                            <div class="single" id="single" style="display: none;">
+                                <div class="cols" style="gap: 17px;">
+                                    <div class="col" id="col 3" style="background:#006bbd ; outline: 2px solid #006ad0;" onclick="singleBlue()"></div>
+                                    <div class="col" id="col 4" style="background:#e2302a;" onclick="singleRed()"></div>
+                                    <div class="col" id="col 5" style="background:#79797c ;" onclick="singleGrey()">
+                                    </div>
+                                </div>
+                                <p class="col_Name" id="col_name 1" style="display: block;">
+                                    Caribbean Blue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feat_Nav">
+            <div class="nav_flex performance">
+                <div class="features_image">
+                    <a href="#"> <img src="icons/Performance.png" alt="">
+                    </a>
+                </div>
+                <h2 class="features_heading">Performance</h2>
+                <p class="features_para">Pure adrenaline-pumping riding with powerful engine and torque-on-demand</p>
+            </div>
+            <div class="nav_flex design">
+                <div class="features_image">
+                    <a href="#"> <img src="icons/Design.png" alt="">
+                    </a>
+                </div>
+                <h2 class="features_heading">Design</h2>
+                <p class="features_para">Sharp, aggresive and aerodynamic look to make head turn</p>
+            </div>
+            <div class="nav_flex technology">
+                <div class="features_image">
+                    <a href="#"> <img src="icons/Handling.png" alt="">
+                    </a>
+                </div>
+                <h2 class="features_heading">Technology</h2>
+                <p class="features_para">Features that aid in real-world and let ride by instinct</p>
+            </div>
+            <div class="nav_flex safety">
+                <div class="features_image">
+                    <a href="#"> <img src="icons/Safety.png" alt="">
+                    </a>
+                </div>
+                <h2 class="features_heading">Safety</h2>
+                <p class="features_para">The power of control, now with twin-disc breaks & ABS technology</p>
+            </div>
+            <div class="nav_flex specs">
+                <a href="#" id="specs">
+                    <div class="specs_details" style="position: relative; height: 140px; width: 100%;border-radius: 20px; top: -15px;
+                background-color:#5aa0eb3f;color: #288cea;">
+                        <div class="features_image" style="position: relative; margin-top: 5px; padding-top: 35px;">
+                            <img src="icons/View Specification.png" alt="" style="height: 60px; width: 70px; ">
+
+                        </div>
+                        <p href="#" class="features_link" style="font-size: 16px; padding: 20px; text-align: center; padding-top: 40px;">
+                            View Pulsar N160 <br> Specification
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="enquire">
+            <div class="enq_head">
+                <h1>Enquire now</h1>
+            </div>
+            <form action="">
+                <div class="coust_frm_1">
+                    <div class="upper_frm">
+                        <div class="model_Name">
+                            <div class="enq_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.532" height="15.158" viewBox="0 0 26.532 15.158">
+                                    <path id="Path_780" data-name="Path 780"
+                                        d="M22.345,6.783a4.158,4.158,0,0,0-2.011.515l-.492-.537a7.053,7.053,0,0,1,3.81-.756c.766.028.832-4.412-4.822-5.963-1.2-.33-.228,1.318-.322,2.256,0,0-5.147-2.736-7.043.7-.708,1.284-.872,1.9-2.738,1.9s-1.1-1.607-3.56-1.637c-1.545-.019-3.129.713-2.973,1.3.128.479,4.419.678,6.093,3.916-.2.089-.383.173-.566.254a4.185,4.185,0,1,0,.451,3.525c1.254.21,2.3.346,2.3.346s6.529,1.185,6.625-.125a7.984,7.984,0,0,1,1.6-4.789l.49.536a4.185,4.185,0,1,0,3.155-1.438ZM4.187,13.148A2.177,2.177,0,1,1,5.849,9.565c-1.45.661-2.007,1.01-1.827,1.5.1.275,1.025.558,2.146.8a2.183,2.183,0,0,1-1.981,1.275Zm18.158,0A2.175,2.175,0,0,1,20.564,9.72L21.6,10.85a.4.4,0,0,0,.571.025l.485-.444a.4.4,0,0,0,.025-.571l-.907-.99a2.177,2.177,0,1,1,.571,4.278Z"
+                                        transform="translate(0 0)" fill="#006ad0" />
+                                </svg>
+                            </div>
+
+                            <select name="model_name" id="model_name">
+                                <option value="null">Select model</option>
+                                <option value="400">Dominar 400</option>
+                                <option value="250">Dominar 250</option>
+                                <option value="f250">Pulsar F250</option>
+                                <option value="n250">Pulsar N250</option>
+                                <option value="rs200">Pulsar RS200</option>
+                                <option value="ns200">Pulsar NS200</option>
+                                <option value="ns160">Pulsar NS160</option>
+                                <option value="ns125">Pulsar NS125</option>
+                                <option value="n160" selected>Pulsar N160</option>
+                                <option value="p150">Pulsar P150</option>
+                                <option value="150">Pulsar 150</option>
+                                <option value="125">Pulsar 125</option>
+                            </select>
+
+                        </div>
+                        <div class="abs">
+                            <div class="enq_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.532" height="15.158" viewBox="0 0 26.532 15.158">
+                                    <path id="Path_780" data-name="Path 780"
+                                        d="M22.345,6.783a4.158,4.158,0,0,0-2.011.515l-.492-.537a7.053,7.053,0,0,1,3.81-.756c.766.028.832-4.412-4.822-5.963-1.2-.33-.228,1.318-.322,2.256,0,0-5.147-2.736-7.043.7-.708,1.284-.872,1.9-2.738,1.9s-1.1-1.607-3.56-1.637c-1.545-.019-3.129.713-2.973,1.3.128.479,4.419.678,6.093,3.916-.2.089-.383.173-.566.254a4.185,4.185,0,1,0,.451,3.525c1.254.21,2.3.346,2.3.346s6.529,1.185,6.625-.125a7.984,7.984,0,0,1,1.6-4.789l.49.536a4.185,4.185,0,1,0,3.155-1.438ZM4.187,13.148A2.177,2.177,0,1,1,5.849,9.565c-1.45.661-2.007,1.01-1.827,1.5.1.275,1.025.558,2.146.8a2.183,2.183,0,0,1-1.981,1.275Zm18.158,0A2.175,2.175,0,0,1,20.564,9.72L21.6,10.85a.4.4,0,0,0,.571.025l.485-.444a.4.4,0,0,0,.025-.571l-.907-.99a2.177,2.177,0,1,1,.571,4.278Z"
+                                        transform="translate(0 0)" fill="#006ad0" />
+                                </svg>
+                            </div>
+                            <select name="abs" id="abs">
+                                <option value="null">Select Varient</option>
+                                <option value="single">Single Channel ABS</option>
+                                <option value="double">Dual Channel ABS</option>
+                            </select>
+                        </div>
+                        <div class="name">
+                            <div class="enq_img">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.348" height="17.67" viewBox="0 0 15.348 17.67">
+                                    <path id="Union_9" data-name="Union 9"
+                                        d="M0,16.67c0-4.461,3.214-7.732,7.173-7.732s7.174,3.271,7.175,7.732ZM3.371,3.941A3.874,3.874,0,0,1,7.173,0a3.874,3.874,0,0,1,3.8,3.941,3.874,3.874,0,0,1-3.8,3.941A3.874,3.874,0,0,1,3.371,3.941Z"
+                                        transform="translate(0.5 0.5)" fill="#006ad0" stroke="rgba(0,0,0,0)"
+                                        stroke-width="1" />
+                                </svg>
+
+                            </div>
+                            <input type="text" name="" id="" placeholder="Full Name">
+                        </div>
+                        <div class="ph_num">
+                            <div class="enq_img">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.753" height="20.803" viewBox="0 0 11.753 20.803">
+                                    <path id="Union_10" data-name="Union 10"
+                                        d="M1.755,20.8A1.786,1.786,0,0,1,0,19V1.81A1.792,1.792,0,0,1,1.755,0H9.991a1.8,1.8,0,0,1,1.762,1.81V19a1.791,1.791,0,0,1-1.762,1.8ZM.924,19a.843.843,0,0,0,.831.857H9.991A.847.847,0,0,0,10.829,19V16.954H.924Zm0-17.191V3.856h9.9V1.81A.853.853,0,0,0,9.991.946H1.755A.849.849,0,0,0,.924,1.81Zm3.995,16.6a.958.958,0,1,1,.958.979A.974.974,0,0,1,4.919,18.413ZM7.489,2.78H4.264a.457.457,0,0,1-.331-.136.48.48,0,0,1,0-.673.457.457,0,0,1,.331-.136H7.489a.455.455,0,0,1,.331.136.479.479,0,0,1,0,.673A.455.455,0,0,1,7.5,2.78Z"
+                                        fill="#006ad0" />
+                                </svg>
+
+                            </div>
+                            <input type="number" name="" id="" placeholder="Mobile Number">
+                            <a href="#">Verify</a>
+                        </div>
+                    </div>
+                    <div class="lower_frm">
+                        <div class="add_pin">
+                            <div class="enq_img">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14.458" height="20.993" viewBox="0 0 14.458 20.993">
+                                    <path id="Path_783" data-name="Path 783"
+                                        d="M7.229,0A7.248,7.248,0,0,0,0,7.229c0,3.847,6.566,12.842,6.865,13.233l.4.531.364-.565c.266-.357,6.832-9.353,6.832-13.2A7.248,7.248,0,0,0,7.229,0Zm.034,10.348h0a3.112,3.112,0,1,1,2.2-.911,3.112,3.112,0,0,1-2.2.911Z"
+                                        fill="#006ad0" />
+                                </svg>
+
+                            </div>
+                            <input type="number" name="" id="" placeholder="Enter Pincode">
+
+                        </div>
+                        <div class="area_det">
+                            <div class="enq_img">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14.458" height="20.993" viewBox="0 0 14.458 20.993">
+                                    <path id="Path_783" data-name="Path 783"
+                                        d="M7.229,0A7.248,7.248,0,0,0,0,7.229c0,3.847,6.566,12.842,6.865,13.233l.4.531.364-.565c.266-.357,6.832-9.353,6.832-13.2A7.248,7.248,0,0,0,7.229,0Zm.034,10.348h0a3.112,3.112,0,1,1,2.2-.911,3.112,3.112,0,0,1-2.2.911Z"
+                                        fill="#006ad0" />
+                                </svg>
+
+                            </div>
+                            <input type="text" name="" id="" placeholder="Select Area">
+
+                        </div>
+                        <div class="ar_det">
+
+                            <a href="#">
+                                <div class="area">
+                                    <span style="font-size: 16px;font-weight: 600;color: #000;">or</span>
+                                    <div class="img">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11.409" height="11.409" viewBox="0 0 11.409 11.409">
+    <path id="location" d="M9.56,7.486A2.074,2.074,0,1,0,11.635,9.56,2.074,2.074,0,0,0,9.56,7.486ZM14.2,9.042a4.664,4.664,0,0,0-4.118-4.118V3.856H9.042V4.924A4.664,4.664,0,0,0,4.924,9.042H3.856v1.037H4.924A4.664,4.664,0,0,0,9.042,14.2v1.068h1.037V14.2A4.664,4.664,0,0,0,14.2,10.079h1.068V9.042H14.2ZM9.56,13.19a3.63,3.63,0,1,1,3.63-3.63A3.631,3.631,0,0,1,9.56,13.19Z" transform="translate(-3.856 -3.856)" fill="#006ad0"/>
+  </svg>
+                                        <span style="font-size: 13px;color:#006ad0;">Detect</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dealer">
+                            <div class="enq_img">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17.312" height="18.495" viewBox="0 0 17.312 18.495">
+                                    <path id="Union_11" data-name="Union 11"
+                                        d="M.993,18.495A.984.984,0,0,1,0,17.543H0c.036-2.725.106-4.235,2.235-4.957a21.354,21.354,0,0,0,3.405-1.51l1.632,4.793.213.657.745-1.937c-1.7-2.167.106-2.265.426-2.265s2.128.1.461,2.265l.745,1.937.213-.657,1.6-4.793a21.337,21.337,0,0,0,3.405,1.51c2.128.689,2.2,2.232,2.235,4.957a.941.941,0,0,1-.993.952Zm6.633-7.419a4.081,4.081,0,0,1-2.66-3.053c-.177,0-.461-.263-.745-1.215-.39-1.28.035-1.477.319-1.445A2.9,2.9,0,0,1,4.4,4.838a3.954,3.954,0,0,1,0-1.707,3.724,3.724,0,0,1,1.064-1.74A4.3,4.3,0,0,1,6.456.636a3.169,3.169,0,0,1,.958-.46A2.644,2.644,0,0,1,8.3.013a3.874,3.874,0,0,1,2.2.427,2.534,2.534,0,0,1,1.064.919s1.774.131,1.17,3.48a2.867,2.867,0,0,1-.142.525c.355-.033.78.164.39,1.445-.284.919-.532,1.215-.745,1.215a4.081,4.081,0,0,1-2.66,3.053,3.3,3.3,0,0,1-1.951,0Z"
+                                        fill="#006ad0" />
+                                </svg>
+
+                            </div>
+                            <select name="dealer" id="dealer">
+                                <option value="Select Dealer">Select Dealer</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="coust_frm_2">
+                    <div class="check_sel">
+                        <input type="checkbox" name="" id=""><span>Get important updates on <span><svg xmlns="http://www.w3.org/2000/svg" width="15.04" height="15.04" viewBox="0 0 15.04 15.04">
+                            <path id="Path_802" data-name="Path 802" d="M12.849,2.186A7.5,7.5,0,0,0,.063,7.452a7.414,7.414,0,0,0,1,3.725L0,15.04,3.97,14a7.509,7.509,0,0,0,3.578.907h0A7.482,7.482,0,0,0,15.04,7.458,7.39,7.39,0,0,0,12.849,2.186Zm-5.3,11.466h0a6.231,6.231,0,0,1-3.168-.864l-.227-.134L1.8,13.269l.629-2.285-.148-.234A6.193,6.193,0,0,1,7.554,1.258a6.2,6.2,0,1,1,0,12.393Zm3.414-4.639c-.187-.093-1.107-.543-1.278-.605s-.3-.093-.421.093-.483.607-.592.73-.218.14-.405.047a5.135,5.135,0,0,1-1.5-.924,5.6,5.6,0,0,1-1.041-1.29c-.11-.186-.012-.287.081-.38s.187-.217.281-.326a1.275,1.275,0,0,0,.187-.311.341.341,0,0,0-.016-.326c-.046-.093-.42-1.01-.577-1.382s-.306-.314-.42-.32-.234-.007-.358-.007a.692.692,0,0,0-.5.233A2.085,2.085,0,0,0,3.746,5.8,3.613,3.613,0,0,0,4.51,7.724a8.332,8.332,0,0,0,3.2,2.812,10.782,10.782,0,0,0,1.067.392A2.583,2.583,0,0,0,9.952,11a1.929,1.929,0,0,0,1.263-.885,1.546,1.546,0,0,0,.109-.885C11.277,9.152,11.153,9.106,10.965,9.013Z" fill="#075e54" fill-rule="evenodd"/>
+                          </svg></span> Whatsapp
+                        </span>
+                        <br>
+                        <input type="checkbox" name="" id=""><span>I would like to check finance option
+                        </span>
+                        <br>
+                        <input type="checkbox" name="" id=""><span>I have read and agree to the <a href="#">Tearm &
+                                Conditions</a>
+                        </span>
+                        <br>
+                    </div>
+                    <div class="right_frm">
+                        <div class="radio_sel">
+                            <input type="radio" name="frm_comp" id=""> <span class="sp">Get a Call Back </span>
+                            <input type="radio" name="frm_comp" id=""> <span class="sp">Book a Test Ride</span>
+                        </div>
+                        <div class="submit">
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="feat_img_spec">
+
+            <div class="perf feat_1" style="background-color: #742ae2;">
+                <div class="left_img">
+                    <img src="images/Performance-new (2).jpg" alt="">
+                </div>
+                <div class="right_art">
+                    <div class="feat_head">
+                        <h3>Performance</h3>
+                        <h2>The New Gold <br>Standard Of 160cc</h2>
+                    </div>
+                    <div class="feat_sld">
+                        <h3>All-New Refined Engine</h3>
+                        <p>Own the strees with intoxicating acceleration and everyday rideability of the new refined engine.
+                            <br> 16PS (11.7 kW ) Power, 14.65 Nm Torque, Twin Spark, Oil-cooled DTS-i engine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dgsn feat" style="background-color: #e2302a;">
+
+                <div class="left_art">
+                    <div class="feat_head">
+                        <h3>Design</h3>
+                        <h2>The Perfect 160cc Naked<br> Street Fighter</h2>
+                    </div>
+                    <div class="feat_sld">
+                        <h3>Dual Tone Aesthetics</h3>
+                        <p>Dynamic interplay of premium metallised dual colours. Darker in the front and lighter towards the rear, it emphasizes the contours of the beast.</p>
+                    </div>
+                </div>
+                <div class="right_img">
+                    <img src="images/Design-new.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="tech feat_1" style="background-color: #2ae23f;">
+                <div class="left_img">
+                    <img src="images/Technology.jpg" alt="">
+                </div>
+                <div class="right_art">
+                    <div class="feat_head">
+                        <h3>Technology</h3>
+                        <h2>Features that matter</h2>
+                    </div>
+                    <div class="feat_sld">
+                        <h3>Best-in-class Front Suspension*</h3>
+                        <p>Tackling streets will now be a breezy affair with the best-in-class 37 mm Telescopic front forks that ensure great handling and agility <br>(*Only for Dual channel ABS variant.)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sfty feat" style="background-color: #2a8fe2;">
+
+                <div class="left_art">
+                    <div class="feat_head">
+                        <h3>Safety</h3>
+                        <h2>The Power Of Control</h2>
+                    </div>
+                    <div class="feat_sld">
+                        <h3>Dual Channel ABS Braking Technology*</h3>
+                        <p>Take charge of emergency braking with full confidence. Our twin-channel ABS feature comes into action ensuring wheels do not lock or subsequently skid on any surface.<br> (*only for Brooklyn Black colour variant)</p>
+                    </div>
+                </div>
+                <div class="right_img">
+                    <img src="images/Safety.jpg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <div class="gallery">
+            <div class="gal lf_img">
+                <img src="images/Safety.jpg" alt="">
+            </div>
+            <div class="gal_cen_img">
+                <img src="images/Technology.jpg" alt="">
+            </div>
+            <div class="gal rt_img">
+                <img src="images/03.jpg" alt="">
+            </div>
+        </div> -->
+        <div class="main_gallery">
+            <div class="heading">
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery">
+                <div class="gal">
+                    <img src="images/Safety.jpg" alt="">
+                </div>
+                <div class="gal active">
+                    <img src="images/Technology.jpg" alt="">
+                </div>
+                <div class="gal ">
+                    <img src="images/03.jpg" alt="">
+                </div>
+                <div class="gal ">
+                    <img src="images/Design-new.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer_Sec">
+
+            <div class="reach_Us">
+                <div class="rec_lt">
+                    <h3> Reach Us</h3>
+                    <div class="lt_flex">
+                        <div class="re_U">
+                            <img src="icons/Icon-phone.png" alt="">
+                            <span>Call: </span>
+                            <a href="#"> +91 7222255555</a>
+                        </div>
+                        <div class="re_U">
+                            <img src="icons/Icon-envelope.png" alt="">
+                            <span>Write: </span>
+                            <a href="#"> customerservice@bajajauto.co.in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rec_rt">
+                    <h3 style="font-size: 25px; font-weight: 400; margin-top: 3vh;">Follow Us</h3>
+                    <div class="soc_icn">
+                        <a href="#"><img src="icons/Facebook.png" alt="" title="Facebook"></a>
+                        <a href="#"><img src="icons/Instagram.png" alt="" title="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer_List">
+                <div class="upper List">
+                    <div class="sub_List">
+                        <h3>Motorcycle</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Pulsar</a>
+                            </li>
+                            <li>
+                                <a href="#">Dominar</a>
+                            </li>
+                            <li>
+                                <a href="#">Avanger</a>
+                            </li>
+                            <li>
+                                <a href="#">Platina</a>
+                            </li>
+                            <li>
+                                <a href="#">CT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>3 Wheelers & Qute</h3>
+                        <ul>
+                            <li><a href="#">RE</a></li>
+
+
+                            <li><a href="#">Maxima Z</a></li>
+
+
+                            <li><a href="#">Maxima X Wide</a></li>
+
+
+                            <li><a href="#">Maxima C</a></li>
+
+
+                            <li><a href="#">Qute</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Coustomer Service</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Contact Us </a>
+                            </li>
+
+                            <li>
+                                <a href="#">Spares</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Owner's Manual</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Locate a Dealer</a>
+                            </li>
+
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>About Bajaj</h3>
+                        <ul>
+                            <li>
+                                <a href="#">the world's favourite indian</a>
+                            </li>
+                            <li>
+                                <a href="#">75 years od bajaj auto</a>
+                            </li>
+                            <li>
+                                <a href="#">bajaj team</a>
+                            </li>
+                            <li>
+                                <a href="#">chairman emeritus speeches</a>
+                            </li>
+                            <li>
+                                <a href="#">bajaj auto & ktm</a>
+                            </li>
+                            <li>
+                                <a href="#">about bajaj group</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Investors</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Investors relations</a>
+                            </li>
+                            <li>
+                                <a href="#">financial performance</a>
+                            </li>
+                            <li>
+                                <a href="#">stock exchange intimations</a>
+                            </li>
+                            <li>
+                                <a href="#">divident</a>
+                            </li>
+                            <li>
+                                <a href="#">policies/codes</a>
+                            </li>
+                            <li>
+                                <a href="#">miscellaneous</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Corporate</h3>
+                        <ul>
+                            <li>
+                                <a href="#">media center</a>
+                            </li>
+                            <li>
+                                <a href="#">corporate social respondilibity</a>
+                            </li>
+                            <li>
+                                <a href="#">key policies</a>
+                            </li>
+                            <li>
+                                <a href="#">code of conduct</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="lower List">
+
+                    <div class="sub_List">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li>
+                                <a href="#">why us</a>
+                            </li>
+                            <li>
+                                <a href="#">who we are </a>
+                            </li>
+                            <li>
+                                <a href="#">life within</a>
+                            </li>
+                            <li>
+                                <a href="#">join us </a>
+                            </li>
+                            <li>
+                                <a href="#">offroad </a>
+                            </li>
+                            <li>
+                                <a href="#">torq</a>
+                            </li>
+                            <li>
+                                <a href="#">ohm </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li>
+                                <a href="#">terms & conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="#">privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3>Sitemap</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3 style="border: none;"></h3>
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3 style="border: none;"></h3>
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sub_List">
+                        <h3 style="border: none;"></h3>
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ft_Link">
+                <div class="sub_ft_link">
+                    <h4>Sports Bikes</h4>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>Naked Bikes</h4>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>Latest Bikes / New Bikes</h4>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>Bikes by Price <span onclick="showMenu1()"><img src="icons/chevron-down.png" id="rot1" alt="up"></span></h4>
+                    <ul id="ul_1" style="height: 220px; width: 200px; margin: -240px 0 0 -20px;">
+                        <li>
+                            <a href="#">Bikes Under 70000</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 80000</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 1 Lakh</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 2 Lakh</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 5 Lakh</a>
+                        </li>
+                        <li>
+                            <a href="#">Bikes Under 10 Lakh</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>Bikes by Engine Capacity <span onclick="showMenu2()"><img src="icons/chevron-down.png" id="rot2" alt="up"></span></h4>
+                    <ul id="ul_2">
+                        <li>
+                            <a href="#">100 CC</a>
+                        </li>
+                        <li>
+                            <a href="#">125 CC</a>
+                        </li>
+                        <li>
+                            <a href="#">150 CC</a>
+                        </li>
+                        <li>
+                            <a href="#">200 CC</a>
+                        </li>
+                        <li>
+                            <a href="#">250 CC</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_ft_link">
+                    <h4>All Bikes</h4>
+                </div>
+            </div>
+            <div class="copy_Right">
+                <p>Copyright © 2022 Indrajit Santra. All rights reserved</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
